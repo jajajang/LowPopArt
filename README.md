@@ -1,6 +1,6 @@
-# Bilinear bandit e-FALB
+# LowPopArt
 
-This is the code for the paper 'Improved Regret Bounds of Bilinear Bandits using Action Space Analysis' published in ICML 2021.
+This is the code for the paper 'Efficient Low-Rank Matrix Estimation, Experimental Design, and Arm-Set-Dependent Low-Rank Bandits'
 
 Required software
  - python 3 with numpy, scipy, sklearn, cython, ipdb, cvxpy, tqdm
@@ -13,20 +13,25 @@ Compile needed
  - for linux
     - do the same as mac above, but in the directory `pyOptSpace_py3_linux_custom`
 
-To replicate the plot in the paper (experiment data already run)
- - run `python3 analyze_expr01_20210425_paper.py`
+To replicate the Figure 1 (left) in the paper
+- Run 'Figure1_left_estimator_experi_easy.ipynb' in 'Figure 123'
 
-To replicate the result in the paper
+To replicate the Figure 1 (right) in the paper
+- Run 'Figure1_right_estimator_experi_hard.ipynb' in 'Figure 123'
+
+To replicate the Figure 2 (left) in the paper
+- Run 'Figure2_left_ETC_regret_analysis.ipynb' in 'Figure 123'
+
+To replicate the Figure 2 (right) in the paper (experiment data already run)
+ - run `python3 analyze_expr01_230928_paper.py`
+
+To replicate the result in Figure 4
   1. Run the script ./running_script.sh
-  2. Move all .pkl files to a subfolder in /res-20210425/R001/T10000 folder 
-  3. remove all the date prefix on .pkl file name. For example, change the name '20210425Sun-232134-bmoracle.pkl' to 'bmoracle.pkl'
-  4. Run `python3 analyze_expr01_20210426_paper.py` 
-  5. If you want to replicate other results in the appendix of our paper, run the following command:
-     - For Appendix E.1, run `python3 efalb_epsilon_estimate.py`
-     - For Appendix E.2, run `python3 efalb_time_measure.py` for checking computational time of eFALB, and `python3 COBYLA_time_measure.py` for its opponent. 
-     - For Appendix E.3, follow the same steps 1-4 with appropriate changes on T and R variables in 'running_script.sh', `python3 analyze_expr01_20210426_paper.py` (here they are total_time and RRR), and subfolder name. 
+  2. Move all .pkl files to a subfolder in /res-20230928/R1_lambda_1/T100000 folder 
+  3. remove all the date prefix on .pkl file name. For example, change the name '20230928Sun-123456-bmoracle.pkl' to 'bmoracle.pkl'
+  4. Run `python3 analyze_expr01_230928_paper.py`
 
-This code was written based on Jun's code, https://github.com/kwangsungjun/lrbandit.
+
 <!--
 # License
 
