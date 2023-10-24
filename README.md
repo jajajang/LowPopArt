@@ -23,10 +23,7 @@ This is the code for the paper 'Efficient Low-Rank Matrix Estimation, Experiment
 ## To replicate the Figure 2 (left) in the paper
 - Run 'Figure2_left_ETC_regret_analysis.ipynb' in 'Figure 123'
 
-## To replicate the Figure 2 (right) in the paper (experiment data already run)
- - run `python3 analyze_expr01_230928_paper.py`
-
-### To replicate the result in Figure 4
+## To replicate the result in Figure 2 (right) in the paper
   1. Run the script ./running_script.sh
   2. Move all .pkl files to a subfolder in /res-20230928/R1_lambda_1/T100000 folder 
   3. remove all the date prefix on .pkl file name. For example, change the name '20230928Sun-123456-bmoracle.pkl' to 'bmoracle.pkl'
