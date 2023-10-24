@@ -4,7 +4,7 @@ This is the code for the paper 'Efficient Low-Rank Matrix Estimation, Experiment
 
 ## Required software
  - python 3 with numpy, scipy, sklearn, cython, ipdb, cvxpy, tqdm, mosek
-Especially about mosek, you need an additional license file to actually use the package.
+- Especially about mosek, you need an additional license file to actually use the package.
 
 ## Compile needed
  - in `matrixrecovery`, run `cython myutils_cython.pyx` and then `python3 setup.py install`
